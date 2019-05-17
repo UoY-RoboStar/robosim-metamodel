@@ -1,40 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
     name="robosim" nsURI="http://www.robocalc.circus/RoboSim" nsPrefix="robosim">
-  <eAnnotations source="http://www.eclipse.org/OCL/Import">
-    <details key="robochart" value="../../circus.robocalc.robochart/model/robochart.ecore#/"/>
-  </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="InputContext" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//Context"/>
-  <eClassifiers xsi:type="ecore:EClass" name="OutputContext" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//Context"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SimModule" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//RCModule">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="const" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Variable"
+  <eClassifiers xsi:type="ecore:EClass" name="InputContext" eSuperTypes="platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Context"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OutputContext" eSuperTypes="platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Context"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SimModule" eSuperTypes="platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//RCModule">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="const" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Variable"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Expression"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Expression"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SimControllerDef" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//ControllerDef">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="const" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Variable"
+  <eClassifiers xsi:type="ecore:EClass" name="SimControllerDef" eSuperTypes="platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//ControllerDef">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="const" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Variable"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Expression"
-        containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SimMachineDef" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//StateMachineDef">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="const" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Variable"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Expression"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="inputContext" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Context"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="outputContext" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Context"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Expression"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ExecTrigger" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//Trigger"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SimRefExp" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//Expression">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="element" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//NamedElement"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Expression"
+  <eClassifiers xsi:type="ecore:EClass" name="SimMachineDef" eSuperTypes="platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//StateMachineDef">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="const" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Variable"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Variable"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="predicate" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Expression"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Expression"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inputContext" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Context"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputContext" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Context"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecTrigger" eSuperTypes="platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Trigger"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SimRefExp" eSuperTypes="platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Expression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="element" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//NamedElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Expression"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Variable"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="predicate" eType="ecore:EClass platform:/resource/circus.robocalc.robochart/model/robochart.ecore#//Expression"
         containment="true"/>
   </eClassifiers>
 </ecore:EPackage>

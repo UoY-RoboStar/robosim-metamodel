@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: circus.robocalc.robosim.editor;singleton:=true
 Automatic-Module-Name: circus.robocalc.robosim.editor
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 2.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Activator: circus.robocalc.robosim.presentation.RobosimEditorPlugin$Implementation
 Bundle-Vendor: %providerName
