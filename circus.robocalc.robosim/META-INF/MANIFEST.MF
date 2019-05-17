@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: circus.robocalc.robosim;singleton:=true
+Automatic-Module-Name: circus.robocalc.robosim
+Bundle-Version: 0.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: circus.robocalc.robosim,
+ circus.robocalc.robosim.impl,
+ circus.robocalc.robosim.util
+Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
+ circus.robocalc.robochart;visibility:=reexport,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated robosim -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="circus.robocalc.robosim.presentation.RobosimModelWizardID"
+            name="%_UI_RobosimModelWizard_label"
+            class="circus.robocalc.robosim.presentation.RobosimModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RobosimModelFile.gif">
+         <description>%_UI_RobosimModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated robosim -->
+      <editor
+            id="circus.robocalc.robosim.presentation.RobosimEditorID"
+            name="%_UI_RobosimEditor_label"
+            icon="icons/full/obj16/RobosimModelFile.gif"
+            extensions="robosim"
+            class="circus.robocalc.robosim.presentation.RobosimEditor"
+            contributorClass="circus.robocalc.robosim.presentation.RobosimActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
