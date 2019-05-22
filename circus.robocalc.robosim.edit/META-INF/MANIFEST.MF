@@ -5,7 +5,7 @@ Bundle-SymbolicName: circus.robocalc.robosim.edit;singleton:=true
 Automatic-Module-Name: circus.robocalc.robosim.edit
 Bundle-Version: 2.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: circus.robocalc.robosim.provider.RobosimEditPlugin$Implementation
+Bundle-Activator: circus.robocalc.robosim.provider.RoboSimEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: J2SE-1.5

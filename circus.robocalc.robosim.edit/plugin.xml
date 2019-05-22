@@ -10,7 +10,7 @@
       <!-- @generated robosim -->
       <factory
             uri="http://www.robocalc.circus/RoboSim"
-            class="circus.robocalc.robosim.provider.RobosimItemProviderAdapterFactory"
+            class="circus.robocalc.robosim.provider.RoboSimItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

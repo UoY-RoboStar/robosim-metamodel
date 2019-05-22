@@ -10,7 +10,7 @@
       <!-- @generated robosim -->
       <package
             uri="http://www.robocalc.circus/RoboSim"
-            class="circus.robocalc.robosim.RobosimPackage"
+            class="circus.robocalc.robosim.RoboSimPackage"
             genModel="model/robosim.genmodel"/>
    </extension>
 

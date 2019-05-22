@@ -12,12 +12,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="circus.robocalc.robosim.presentation.RobosimModelWizardID"
-            name="%_UI_RobosimModelWizard_label"
-            class="circus.robocalc.robosim.presentation.RobosimModelWizard"
+            id="circus.robocalc.robosim.presentation.RoboSimModelWizardID"
+            name="%_UI_RoboSimModelWizard_label"
+            class="circus.robocalc.robosim.presentation.RoboSimModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/RobosimModelFile.gif">
-         <description>%_UI_RobosimModelWizard_description</description>
+            icon="icons/full/obj16/RoboSimModelFile.gif">
+         <description>%_UI_RoboSimModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -25,13 +25,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated robosim -->
       <editor
-            id="circus.robocalc.robosim.presentation.RobosimEditorID"
-            name="%_UI_RobosimEditor_label"
-            icon="icons/full/obj16/RobosimModelFile.gif"
+            id="circus.robocalc.robosim.presentation.RoboSimEditorID"
+            name="%_UI_RoboSimEditor_label"
+            icon="icons/full/obj16/RoboSimModelFile.gif"
             extensions="robosim"
-            class="circus.robocalc.robosim.presentation.RobosimEditor"
-            contributorClass="circus.robocalc.robosim.presentation.RobosimActionBarContributor">
+            class="circus.robocalc.robosim.presentation.RoboSimEditor"
+            contributorClass="circus.robocalc.robosim.presentation.RoboSimActionBarContributor">
       </editor>
    </extension>
-
 </plugin>

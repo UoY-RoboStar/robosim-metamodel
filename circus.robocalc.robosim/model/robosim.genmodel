@@ -3,13 +3,13 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
     modelDirectory="/circus.robocalc.robosim/src-gen" creationIcons="false"
     editDirectory="/circus.robocalc.robosim.edit/src-gen" editorDirectory="/circus.robocalc.robosim.editor/src-gen"
-    modelPluginID="circus.robocalc.robosim" modelName="Robosim" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    modelPluginID="circus.robocalc.robosim" modelName="RoboSim" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
-    copyrightFields="false" usedGenPackages="platform:/resource/circus.robocalc.robochart/model/robochart.genmodel#//robochart"
+    copyrightFields="false" usedGenPackages="../../circus.robocalc.robochart/model/robochart.genmodel#//robochart"
     operationReflection="true" importOrganizing="true">
   <foreignModel>robosim.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
-  <genPackages prefix="Robosim" basePackage="circus.robocalc" disposableProviderFactory="true"
+  <genPackages prefix="RoboSim" basePackage="circus.robocalc" disposableProviderFactory="true"
       ecorePackage="robosim.ecore#/">
     <genClasses ecoreClass="robosim.ecore#//InputContext"/>
     <genClasses ecoreClass="robosim.ecore#//OutputContext"/>
@@ -28,11 +28,13 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimMachineDef/outputContext"/>
     </genClasses>
     <genClasses ecoreClass="robosim.ecore#//ExecTrigger"/>
-    <genClasses ecoreClass="robosim.ecore#//SimRefExp">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robosim.ecore#//SimRefExp/element"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimRefExp/value"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robosim.ecore#//SimRefExp/variable"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimRefExp/predicate"/>
+    <genClasses ecoreClass="robosim.ecore#//EventExp">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robosim.ecore#//EventExp/element"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//EventExp/value"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robosim.ecore#//EventExp/variable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//EventExp/predicate"/>
     </genClasses>
+    <genClasses ecoreClass="robosim.ecore#//SimCall"/>
+    <genClasses ecoreClass="robosim.ecore#//SimVarRef"/>
   </genPackages>
 </genmodel:GenModel>
