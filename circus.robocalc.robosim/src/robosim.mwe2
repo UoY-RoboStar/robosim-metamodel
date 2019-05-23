@@ -1,0 +1,39 @@
+/********************************************************************************
+ * Copyright (c) 2019 University of York and others
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ *
+ * Contributors:
+ *   Alvaro Miyazawa - initial definition
+ ********************************************************************************/
+
+module robosim
+
+Workflow { 
+	bean = org.eclipse.emf.mwe.utils.StandaloneSetup {
+		scanClassPath = true
+		platformUri = ".."
+		
+		uriMap = {
+			from = "platform:/plugin/circus.robocalc.robochart/model/robochart.genmodel"
+			to = "platform:/resource/circus.robocalc.robochart/model/robochart.genmodel"
+		}
+
+		uriMap = {
+			from = "platform:/plugin/circus.robocalc.robochart/model/robochart.ecore"
+			to = "platform:/resource/circus.robocalc.robochart/model/robochart.ecore"
+		}
+		registerGenModelFile = "platform:/resource/circus.robocalc.robochart/model/robochart.genmodel"
+		registerEcoreFile = "platform:/resource/circus.robocalc.robochart/model/robochart.ecore"
+	}
+	component = org.eclipse.emf.mwe2.ecore.EcoreGenerator {
+		genModel = "platform:/resource/circus.robocalc.robosim/model/robosim.genmodel"
+		srcPath = "platform:/resource/circus.robocalc.robosim/src-gen"
+		generateEdit = true
+		generateEditor = true
+	}
+}
