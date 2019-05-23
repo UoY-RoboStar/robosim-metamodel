@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: %pluginName
+Bundle-Name: RoboSim Metamodel Editor Plugin
 Bundle-SymbolicName: circus.robocalc.robosim.editor;singleton:=true
 Automatic-Module-Name: circus.robocalc.robosim.editor
 Bundle-Version: 2.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Activator: circus.robocalc.robosim.presentation.RoboSimEditorPlugin$Implementation
-Bundle-Vendor: %providerName
+Bundle-Vendor: RoboCalc Project
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: circus.robocalc.robosim.presentation
