@@ -28,11 +28,11 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimMachineDef/outputContext"/>
     </genClasses>
     <genClasses ecoreClass="robosim.ecore#//ExecTrigger"/>
-    <genClasses ecoreClass="robosim.ecore#//EventExp">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robosim.ecore#//EventExp/element"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//EventExp/value"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robosim.ecore#//EventExp/variable"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//EventExp/predicate"/>
+    <genClasses ecoreClass="robosim.ecore#//SimRefExp">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robosim.ecore#//SimRefExp/element"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimRefExp/exp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robosim.ecore#//SimRefExp/variable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimRefExp/predicate"/>
     </genClasses>
     <genClasses ecoreClass="robosim.ecore#//SimCall"/>
     <genClasses ecoreClass="robosim.ecore#//SimVarRef"/>
