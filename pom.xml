@@ -19,7 +19,9 @@ SPDX-License-Identifier: EPL-2.0
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <eclipse-repo.url>http://download.eclipse.org/releases/2019-03</eclipse-repo.url>
         <robochart-metamodel.url>http://cs.york.ac.uk/robostar/robotool/update</robochart-metamodel.url>
-        <xtext.version>2.17.1</xtext.version>
+        <xtext.version>2.18.0</xtext.version>
+        <maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
     </properties>
 
     <modules>
