@@ -12,27 +12,26 @@ Package robosim <http://www.robocalc.circus/RoboSim>
   Class OutputContext -> Context
 
   Class SimModule -> RCModule
-    Reference const : Variable
     Reference cycleDef : Expression
 
   Class SimControllerDef -> ControllerDef
-    Reference const : Variable
     Reference cycleDef : Expression
 
   Class SimMachineDef -> StateMachineDef
-    Reference const : Variable
     Reference cycleDef : Expression
     Reference inputContext : Context
     Reference outputContext : Context
 
   Class ExecTrigger -> Trigger
 
-  Class EventExp -> Expression
-    Reference element : Event
-    Reference value : Expression
+  Class SimRefExp -> Expression
+    Reference element : NamedElement
+    Reference exp : Expression
     Reference variable : Variable
     Reference predicate : Expression
 
   Class SimCall -> Call
 
   Class SimVarRef -> VarRef
+
+  Class CycleExp -> Expression
