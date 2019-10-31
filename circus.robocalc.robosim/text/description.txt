@@ -22,6 +22,11 @@ Package robosim <http://www.robocalc.circus/RoboSim>
     Reference inputContext : Context
     Reference outputContext : Context
 
+  Class SimOperationDef -> OperationDef
+    Reference cycleDef : Expression
+    Reference inputContext : Context
+    Reference outputContext : Context
+
   Class ExecTrigger -> Trigger
 
   Class SimRefExp -> Expression
