@@ -7,27 +7,35 @@
   <eClassifiers xsi:type="ecore:EClass" name="InputContext" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"/>
   <eClassifiers xsi:type="ecore:EClass" name="OutputContext" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"/>
   <eClassifiers xsi:type="ecore:EClass" name="SimModule" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//RCModule">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Expression"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Expression"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SimControllerDef" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//ControllerDef">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Expression"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Expression"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SimMachineDef" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//StateMachineDef">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Expression"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Expression"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="inputContext" eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inputContext" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="outputContext" eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputContext" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SimOperationDef" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//OperationDef">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Expression"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Expression"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="inputContext" eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inputContext" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="outputContext" eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputContext" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ExecTrigger" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Trigger"/>

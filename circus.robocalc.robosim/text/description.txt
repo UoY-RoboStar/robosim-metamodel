@@ -12,20 +12,20 @@ Package robosim <http://www.robocalc.circus/RoboSim>
   Class OutputContext -> Context
 
   Class SimModule -> RCModule
-    Reference cycleDef : Expression
+    Reference cycleDef : Expression<<1..1>>
 
   Class SimControllerDef -> ControllerDef
-    Reference cycleDef : Expression
+    Reference cycleDef : Expression<<1..1>>
 
   Class SimMachineDef -> StateMachineDef
-    Reference cycleDef : Expression
-    Reference inputContext : Context
-    Reference outputContext : Context
+    Reference cycleDef : Expression<<1..1>>
+    Reference inputContext : Context<<1..1>>
+    Reference outputContext : Context<<1..1>>
 
   Class SimOperationDef -> OperationDef
-    Reference cycleDef : Expression
-    Reference inputContext : Context
-    Reference outputContext : Context
+    Reference cycleDef : Expression<<1..1>>
+    Reference inputContext : Context<<1..1>>
+    Reference outputContext : Context<<1..1>>
 
   Class ExecTrigger -> Trigger
 
