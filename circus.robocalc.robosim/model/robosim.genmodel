@@ -4,8 +4,8 @@
     modelDirectory="/circus.robocalc.robosim/src-gen" creationIcons="false"
     editDirectory="/circus.robocalc.robosim.edit/src-gen" editorDirectory="/circus.robocalc.robosim.editor/src-gen"
     modelPluginID="circus.robocalc.robosim" modelName="RoboSim" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
-    copyrightFields="false" usedGenPackages="../../circus.robocalc.robochart/model/robochart.genmodel#//robochart"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" bundleManifest="false"
+    complianceLevel="5.0" copyrightFields="false" usedGenPackages="../../circus.robocalc.robochart/model/robochart.genmodel#//robochart"
     operationReflection="true" importOrganizing="true">
   <foreignModel>robosim.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
@@ -14,18 +14,20 @@
     <genClasses ecoreClass="robosim.ecore#//InputContext"/>
     <genClasses ecoreClass="robosim.ecore#//OutputContext"/>
     <genClasses ecoreClass="robosim.ecore#//SimModule">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimModule/const"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimModule/cycleDef"/>
     </genClasses>
     <genClasses ecoreClass="robosim.ecore#//SimControllerDef">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimControllerDef/const"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimControllerDef/cycleDef"/>
     </genClasses>
     <genClasses ecoreClass="robosim.ecore#//SimMachineDef">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimMachineDef/const"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimMachineDef/cycleDef"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimMachineDef/inputContext"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimMachineDef/outputContext"/>
+    </genClasses>
+    <genClasses ecoreClass="robosim.ecore#//SimOperationDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimOperationDef/cycleDef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimOperationDef/inputContext"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robosim.ecore#//SimOperationDef/outputContext"/>
     </genClasses>
     <genClasses ecoreClass="robosim.ecore#//ExecTrigger"/>
     <genClasses ecoreClass="robosim.ecore#//SimRefExp">
@@ -36,5 +38,6 @@
     </genClasses>
     <genClasses ecoreClass="robosim.ecore#//SimCall"/>
     <genClasses ecoreClass="robosim.ecore#//SimVarRef"/>
+    <genClasses ecoreClass="robosim.ecore#//CycleExp"/>
   </genPackages>
 </genmodel:GenModel>
