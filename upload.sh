@@ -1,6 +1,6 @@
 echo "Get current version"
 dir=circus.robocalc.robosim.update/target/repository/
-remote=/shared/storage/cs/webcs/robostar/robotool/robosim-metamodel/
+remote=/shared/storage/cs/www/robostar/robotool/robosim-metamodel/
 url=ahm504@sftp.york.ac.uk
 file=$(ls $dir/features | grep -m 1 jar)
 version=${file#*_}
