@@ -39,5 +39,6 @@
     <genClasses ecoreClass="robosim.ecore#//SimCall"/>
     <genClasses ecoreClass="robosim.ecore#//SimVarRef"/>
     <genClasses ecoreClass="robosim.ecore#//CycleExp"/>
+    <genClasses ecoreClass="robosim.ecore#//ExecStatement"/>
   </genPackages>
 </genmodel:GenModel>
