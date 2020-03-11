@@ -23,7 +23,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="SimVarRef" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//VarRef"/>
   <eClassifiers xsi:type="ecore:EClass" name="CycleExp" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Expression"/>
   <eClassifiers xsi:type="ecore:EClass" name="ExecStatement" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Statement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="SimContext">
+  <eClassifiers xsi:type="ecore:EClass" name="SimContext" eSuperTypes="platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context">
     <eStructuralFeatures xsi:type="ecore:EReference" name="inputContext" lowerBound="1"
         eType="ecore:EClass platform:/plugin/circus.robocalc.robochart/model/robochart.ecore#//Context"
         containment="true"/>
