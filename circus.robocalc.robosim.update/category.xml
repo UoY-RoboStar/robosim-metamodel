@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <feature id="circus.robocalc.robosim.feature" version="0.0.0">
-      <category name="main"/>
+      <category name="robosim"/>
    </feature>
    <feature id="circus.robocalc.robosim.feature.source" version="0.0.0">
-      <category name="main.source"/>
+      <category name="robosim.source"/>
    </feature>
-   <category-def name="main" label="RoboSim Ecore Modelling "/>
-   <category-def name="main.source" label="RoboSim Ecore Modelling (Source)"/>
+   <category-def name="robosim" label="RoboSim"/>
+   <category-def name="robosim.source" label="RoboSim (Source)"/>
 </site>
