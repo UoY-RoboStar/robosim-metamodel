@@ -4,7 +4,10 @@
 # available at http://www.eclipse.org/legal/epl-2.0.
 #
 # SPDX-License-Identifier: EPL-2.0
-box: openjdk:11.0.3-jdk-stretch
+box: 
+  id: openjdk:11.0.3-jdk-stretch
+  username: $DOCKERUSR
+  password: $DOCKERPWD
 
 build:
   steps:
