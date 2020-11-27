@@ -36,4 +36,9 @@
         eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Expression"
         containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OutputCommunication" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//Statement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="event" lowerBound="1" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Event"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Expression"
+        containment="true"/>
+  </eClassifiers>
 </ecore:EPackage>
