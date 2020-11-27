@@ -10,7 +10,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="SimControllerDef" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//ControllerDef #//Cyclic"/>
   <eClassifiers xsi:type="ecore:EClass" name="SimMachineDef" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//StateMachineDef #//SimContext #//Cyclic"/>
   <eClassifiers xsi:type="ecore:EClass" name="SimOperationDef" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//OperationDef #//SimContext"/>
-  <eClassifiers xsi:type="ecore:EClass" name="ExecTrigger" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//Trigger"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecTrigger" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//Communication"/>
   <eClassifiers xsi:type="ecore:EClass" name="SimRefExp" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//Expression">
     <eStructuralFeatures xsi:type="ecore:EReference" name="element" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//NamedElement"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="exp" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Expression"
@@ -34,6 +34,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="Cyclic">
     <eStructuralFeatures xsi:type="ecore:EReference" name="cycleDef" lowerBound="1"
         eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Expression"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OutputCommunication" eSuperTypes="../../circus.robocalc.robochart/model/robochart.ecore#//Statement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="event" lowerBound="1" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Event"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass ../../circus.robocalc.robochart/model/robochart.ecore#//Expression"
         containment="true"/>
   </eClassifiers>
 </ecore:EPackage>
