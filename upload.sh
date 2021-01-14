@@ -25,6 +25,9 @@ then
   mkdir tmp && cd tmp
   mkdir $dest
   cp -r ../$dir/* $dest
+  
+  # Deploy a copy of the ECore file as well
+  cp ../circus.robocalc.robosim/model/robosim.ecore $dest
 
   # In the new host, it is not possible to generate a symlink that points to
   # a non-existent target, such as 'update', before it is actually created.
