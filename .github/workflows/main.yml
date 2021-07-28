@@ -33,7 +33,7 @@ jobs:
       - name: Build with Maven
         run: mvn clean install
       
-      - if: (github.ref == 'refs/heads/master') && github.event_name = 'push'
+      - if: (github.ref == 'refs/heads/master') && github.event_name == 'push'
         name: Setup SSH
         uses: kielabokkie/ssh-key-and-known-hosts-action@v1
         with:
@@ -42,12 +42,12 @@ jobs:
           # Hostname or IP to add to the known hosts file
           ssh-host: ${{ secrets.ROBOSTAR_WEB_HOST }}
           
-      - if: (github.ref == 'refs/heads/master') && github.event_name = 'push'
+      - if: (github.ref == 'refs/heads/master') && github.event_name == 'push'
         name: Making upload.sh executable
         run: chmod +x upload.sh
 
       # If branch is 'master' and not a pull request, then upload.
-      - if: (github.ref == 'refs/heads/master') && github.event_name = 'push'
+      - if: (github.ref == 'refs/heads/master') && github.event_name == 'push'
         name: Uploading update site
         run: ./upload.sh
         env:
@@ -63,7 +63,8 @@ jobs:
 #           MAILCHIMPKEY: ${{ secrets.MAILCHIMPKEY }}
 #           MAILCHIMPUSR: ${{ secrets.MAILCHIMPUSR }}
       
-      - name: Recompile Textual Editor
+      - if: (github.ref == 'refs/heads/master') && github.event_name == 'push'
+        name: Recompile Textual Editor
         run: |
           # Propagate recompilation if global flag is active
           if [[ -z ${ROBOSTAR_RECOMPILE_ALL} || ${ROBOSTAR_RECOMPILE_ALL} = false ]]; then
