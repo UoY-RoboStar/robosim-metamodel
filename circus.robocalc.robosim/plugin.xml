@@ -6,14 +6,6 @@
 
 <plugin>
 
-   <extension
-         point="org.eclipse.emf.ecore.factory_override">
-      <factory
-            class="circus.robocalc.robosim.impl.RoboSimFactoryImplCustom"
-            uri="http://www.robocalc.circus/RoboSim">
-      </factory>
-   </extension>
-
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated robosim -->
       <package
