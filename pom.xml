@@ -15,13 +15,13 @@ SPDX-License-Identifier: EPL-2.0
     <packaging>pom</packaging>
 
     <properties>
-        <tycho.version>1.4.0</tycho.version>
+        <tycho.version>1.7.0</tycho.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <eclipse-repo.url>http://download.eclipse.org/releases/2019-03</eclipse-repo.url>
         <robochart-metamodel.url>http://cs.york.ac.uk/robostar/robotool/update</robochart-metamodel.url>
         <xtext.version>2.18.0</xtext.version>
-        <maven.compiler.source>8</maven.compiler.source>
-		<maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <modules>
