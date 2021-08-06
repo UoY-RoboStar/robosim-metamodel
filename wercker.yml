@@ -23,10 +23,25 @@ deploy:
     - add-ssh-key:
         keyname: deployment
     - add-to-known_hosts:
-        hostname: sftp.york.ac.uk
-        fingerprint: 1ksayLs+AwXM/7ljQ4uIgCqHq7Z8U8tPG+iZDAsm51M
-        type: rsa
+        hostname: $ROBOSTAR_WEB_HOST
+        fingerprint: $ROBOSTAR_WEB_SSH_FINGERPRINT
+        type: $ROBOSTAR_WEB_SSH_FINGERPRINT_TYPE
     - script:
         name: uploading update site
         code: |-
           ./upload.sh
+
+trigger-recompile:
+  steps:
+    - script:
+        name: trigger recompile of dependents
+        code: |-
+          # Propagate recompilation if global flag is active
+          if [[ -z ${WERCKER_ROBOSTAR_RECOMPILE_ALL} || ${WERCKER_ROBOSTAR_RECOMPILE_ALL} = false ]]; then
+            echo "Recompilation is disabled or not set."
+          else
+            curl -H 'Authorization: Bearer $WERCKER_ROBOSTAR_TOKEN' \
+                 --request POST \
+                 --data '{"pipelineId":"$NEXT_PIPELINE_PIPELINEID","branch":"$WERCKER_GIT_BRANCH","message":"Automatic recompilation triggered."}' \
+                 https://app.wercker.com/api/v3/runs/
+          fi
