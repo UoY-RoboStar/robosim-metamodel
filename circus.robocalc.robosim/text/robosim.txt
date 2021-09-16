@@ -1,0 +1,39 @@
+// The following file has been generated using the OCLinEcore tool.
+
+import robochart : 'platform:/resource/circus.robocalc.robochart/model/robochart.ecore#/';
+
+package robosim : robosim = 'http://www.robocalc.circus/RoboSim'
+{
+	class InputContext extends robochart::Context;
+	class OutputContext extends robochart::Context;
+	class SimModule extends robochart::RCModule,Cyclic;
+	class SimControllerDef extends robochart::ControllerDef,Cyclic;
+	class SimMachineDef extends robochart::StateMachineDef,SimContext,Cyclic;
+	class SimOperationDef extends robochart::OperationDef,SimContext;
+	class ExecTrigger extends robochart::Communication;
+	class SimRefExp extends robochart::Expression
+	{
+		property element : robochart::NamedElement[?];
+		property exp : robochart::Expression[?] { composes };
+		property variable : robochart::Variable[?];
+		property predicate : robochart::Expression[?] { composes };
+	}
+	class SimCall extends robochart::Call;
+	class SimVarRef extends robochart::VarRef;
+	class CycleExp extends robochart::Expression;
+	class ExecStatement extends robochart::Statement;
+	abstract class SimContext extends robochart::Context
+	{
+		property inputContext : robochart::Context[1] { composes };
+		property outputContext : robochart::Context[1] { composes };
+	}
+	abstract class Cyclic
+	{
+		property cycleDef : robochart::Expression[1] { composes };
+	}
+	class OutputCommunication extends robochart::Statement
+	{
+		property event : robochart::Event[1];
+		property value : robochart::Expression[?] { composes };
+	}
+}
