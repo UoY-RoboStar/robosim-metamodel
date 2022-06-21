@@ -5,20 +5,21 @@ url=${ROBOSTAR_WEB_USER}@${ROBOSTAR_WEB_HOST}
 file=$(ls $dir/features | grep -m 1 jar)
 version=${file#*_}
 version=${version%.jar}
+BRANCH_NAME=${GITHUB_REF##*/}
 
 # Use the branch name to choose the name of the branch. This assumes
 # no branch of name 'update' will ever be used.
-if [[ $WERCKER_GIT_BRANCH = master ]];
+if [[ $BRANCH_NAME = master ]];
 then
   update=update
 else
-  update=$WERCKER_GIT_BRANCH
+  update=$BRANCH_NAME
 fi
 
 if [[ $version = *[!\ ]* ]]; 
 then 
   echo "Current version:" $version;
-  echo "Branch:" $WERCKER_GIT_BRANCH;
+  echo "Branch:" $BRANCH_NAME;
   dest=${update}_${version}
   echo "Target dir:" $dest;
   rm -rf tmp
