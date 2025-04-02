@@ -17,9 +17,8 @@ SPDX-License-Identifier: EPL-2.0
     <properties>
         <tycho.version>1.7.0</tycho.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <eclipse-repo.url>http://download.eclipse.org/releases/2021-12</eclipse-repo.url>
-        <robochart-metamodel.url>https://robostar.cs.york.ac.uk/robotool/update</robochart-metamodel.url>
-		<robosim-metamodel.url>https://robostar.cs.york.ac.uk/robotool/robosim-metamodel/</robosim-metamodel.url>
+        <eclipse-repo.url>http://download.eclipse.org/releases/2019-03</eclipse-repo.url>
+        <robochart-metamodel.url>http://cs.york.ac.uk/robostar/robotool/update</robochart-metamodel.url>
         <xtext.version>2.18.0</xtext.version>
         <maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
@@ -45,13 +44,6 @@ SPDX-License-Identifier: EPL-2.0
             <url>${robochart-metamodel.url}</url>
             <layout>p2</layout>
         </repository>
-
-        <repository>
-            <id>robosim-metamodel</id>
-            <url>${robosim-metamodel.url}</url>
-            <layout>p2</layout>
-        </repository>
-
     </repositories>
 
     <build>
