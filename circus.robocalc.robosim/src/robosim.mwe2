@@ -13,10 +13,13 @@
 
 module robosim
 
+/* This is needed so that the parameter from pom.xml is actually effective. */
+var rootPath = ".."
+
 Workflow { 
 	bean = org.eclipse.emf.mwe.utils.StandaloneSetup {
 		scanClassPath = true
-		platformUri = ".."
+		platformUri = "${rootPath}"
 		
 		uriMap = {
 			from = "platform:/plugin/circus.robocalc.robochart/model/robochart.genmodel"
